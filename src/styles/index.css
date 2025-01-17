@@ -198,3 +198,77 @@
     }
   }
 }
+
+#Contact {
+  display: flex;
+  padding: 8rem 7.5rem 12.5rem 7.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  background: url(../assets/Background_Contacts.svg) lightgray 50% / cover
+    no-repeat;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    h3 {
+      color: var(--purple);
+      text-align: center;
+
+      /* Subtitle */
+      font-family: var(--font-family-2);
+      font-size: 1.25rem;
+
+      font-weight: 400;
+      line-height: 120%; /* 24px */
+    }
+
+    p {
+      color: var(--gray-500);
+      text-align: center;
+
+      /* Text Md */
+      font-family: var(--font-family-3);
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+  }
+
+  nav {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+
+    a {
+      display: flex;
+      width: 25rem;
+      padding: 1.25rem;
+      justify-content: space-between;
+      align-items: center;
+
+      text-decoration: none;
+      border-radius: 0.5rem;
+      background: var(--gray-300);
+
+      color: var(--gray-500);
+      font-family: var(--font-family-3);
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 140%; /* 22.4px */
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+      }
+    }
+  }
+}
