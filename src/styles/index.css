@@ -115,3 +115,28 @@
     }
   }
 }
+
+#Projects {
+  display: flex;
+  padding: 4.5rem 7.5rem 9rem 7.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  align-self: stretch;
+
+  header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  #Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
