@@ -108,7 +108,7 @@
       }
     }
 
-    button {
+    a {
       cursor: pointer;
       border: none;
       background-color: transparent;
@@ -245,30 +245,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 1rem;
-
-    a {
-      display: flex;
-      width: 25rem;
-      padding: 1.25rem;
-      justify-content: space-between;
-      align-items: center;
-
-      text-decoration: none;
-      border-radius: 0.5rem;
-      background: var(--gray-300);
-
-      color: var(--gray-500);
-      font-family: var(--font-family-3);
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 140%; /* 22.4px */
-
-      span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.75rem;
-      }
-    }
+    width: 25rem;
+    height: 20rem;
   }
 }

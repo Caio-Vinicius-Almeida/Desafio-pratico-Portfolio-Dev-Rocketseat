@@ -6,6 +6,13 @@
 
 body {
   background: var(--gray-200);
+  -webkit-font-smoothing: antialiased; /* Suavização para fontes menores */
+  -moz-osx-font-smoothing: grayscale; /* Para compatibilidade com Firefox no macOS */
+  text-rendering: optimizeLegibility; /* Melhora a legibilidade, ajustando espaçamento de letras */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -88,9 +95,8 @@ h3 {
   justify-content: center;
   gap: 1.25rem;
   flex-shrink: 0;
-  transition: 0.35s;
   cursor: pointer;
-
+  border: 0.0938rem solid transparent;
   border-radius: 0.75rem;
   background: var(--gray-300);
 
@@ -137,5 +143,38 @@ h3 {
   border-radius: 0.75rem;
   border: 0.0938rem solid var(--gray-400);
   background: var(--gray-300);
-  transform: scale(0.9);
+}
+
+.SocialButton {
+  display: flex;
+  width: 25rem;
+  padding: 1.25rem;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: 0.35s es;
+  border: 0.0938rem solid transparent;
+  background: var(--gray-300);
+  color: var(--gray-500);
+  font-family: var(--font-family-3);
+
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 140%;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+}
+
+.SocialButton:hover {
+  border: 0.0938rem solid var(--blue);
+}
+
+.SocialButton:hover span .blue-link path {
+  fill: var(--blue);
 }
